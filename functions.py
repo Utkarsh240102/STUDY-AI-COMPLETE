@@ -11,6 +11,10 @@ from fastapi import UploadFile
 import pandas as pd
 from datetime import datetime, timedelta
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configure Gemini API with error handling - NO DEFAULT VALUES
 try:

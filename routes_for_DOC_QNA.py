@@ -18,9 +18,9 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import PyMuPDFLoader, CSVLoader, WebBaseLoader
-from langchain.schema import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.retrievers import BM25Retriever  # FIXED: Added missing import
+from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_community.retrievers import BM25Retriever  # FIXED: Added missing import
 from rank_bm25 import BM25Okapi
 from datetime import datetime
 import traceback

@@ -6,6 +6,10 @@ import requests
 from typing import Dict, Any
 from datetime import datetime
 import time
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Cloudinary configuration - NO DEFAULT VALUES
 CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME")

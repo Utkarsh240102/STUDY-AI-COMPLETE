@@ -3,6 +3,10 @@ import re
 import tempfile
 import google.generativeai as genai
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Set up Gemini API - NO DEFAULT VALUES
 GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY")
